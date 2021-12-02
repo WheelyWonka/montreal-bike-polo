@@ -1,0 +1,30 @@
+@import (reference) '~src/theme';
+
+.position-fixed {
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  z-index: 99;
+}
+
+.toggleLang {
+  color: white;
+  font-family: 'wicked', sans-serif;
+  text-shadow: 1px 1px 0px black;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.countDownBtn {
+  background-color: @primary-color;
+  font-family: 'john', sans-serif;
+  color: white;
+  @media (max-width: 576px) {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 0;
+    font-size: .8em;
+  }
+}

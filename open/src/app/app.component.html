@@ -1,0 +1,14 @@
+<div class="position-fixed d-flex align-items-center justify-content-between">
+	<div (click)="toggleLang()" class="p-3 toggleLang text-uppercase">
+		{{ localStorage.getItem('lang') }}
+	</div>
+	<a
+		class="countDownBtn d-flex align-items-center justify-content-center text-uppercase px-3 py-2 rounded"
+		href="https://forms.gle/1Fd5NX7pp8TzAxLY7"
+		target="_blank"
+	>
+		<span class="mr-2">{{ 'registration' | translate }}</span>
+	</a>
+</div>
+
+<router-outlet></router-outlet>

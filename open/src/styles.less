@@ -1,0 +1,119 @@
+@import 'theme';
+
+///////////////
+//  FONT
+///////////////
+
+@font-face {
+  font-family: 'wicked';
+  src: url('assets/fonts/wicked_mouse_demo-webfont.woff2') format('woff2'),
+  url('assets/fonts/wicked_mouse_demo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'john';
+  src: url('assets/fonts/big_john-webfont.woff2') format('woff2'),
+  url('assets/fonts/big_john-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+///////////////
+//  /FONT
+///////////////
+
+///////////////
+//  OVERRIDES ANT & BOOTSTRAP
+///////////////
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+  background-color: #fdcd06;
+  color: black;
+
+	.anticon {
+		vertical-align: 0;
+	}
+
+  .ant-btn-primary {
+    font-weight: bold;
+  }
+}
+
+///////////////
+//  /OVERRIDES ANT & BOOTSTRAP
+///////////////
+
+///////////////
+//  GLOBAL
+///////////////
+
+h2 {
+  color: white;
+  font-family: 'wicked', sans-serif;
+  text-shadow: 6px 6px 0px black;
+  font-size: 3rem;
+}
+
+h3 {
+  color: black;
+  font-family: 'john', sans-serif;
+  font-size: 1.6rem;
+}
+
+
+h4 {
+  color: black;
+  font-family: 'john', sans-serif;
+  text-shadow: 2px 2px 0px @primary-color;
+  font-size: 1.3rem;
+}
+
+p {
+  color: black;
+  font-family: 'john', sans-serif;
+}
+
+.bg-contain {
+  background: center no-repeat;
+  background-size: contain;
+}
+
+.rectangle {
+  display: block;
+  width: 100%;
+  padding-bottom: 70%;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .measurements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .25rem;
+  }
+
+  .measurements * {
+    font-family: 'john', sans-serif;
+    color: white;
+
+    &.measurements-number {
+      font-size: 1em;
+      margin-right: .25rem;
+      margin-bottom: 0;
+    }
+
+    &.measurements-text {
+      margin-bottom: 0;
+    }
+  }
+}
+///////////////
+//  /GLOBAL
+///////////////
